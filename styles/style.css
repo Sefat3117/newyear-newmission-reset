@@ -297,6 +297,21 @@ main {
 
 .portfolio-container {
   margin: 300px 0 120px 0;
+  text-align: center;
+}
+
+.portfolio-container h3 {
+  color: #f00;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.portfolio-container h2 {
+  color: #070211;
+  font-family: Merriweather;
+  font-size: 72px;
+  font-weight: 900;
 }
 
 .photo-row {
@@ -311,8 +326,13 @@ main {
   height: 450px;
 }
 
+.photo-row img:hover {
+  transform: scale(1.1);
+}
+
 /* Subscribe box related styles */
 .subscribe-container {
+  height: 600px;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -320,6 +340,27 @@ main {
   justify-content: center;
   border-radius: 16px;
   background: rgba(255, 0, 0, 0.05);
+}
+
+.subscribe-container h2 {
+  color: rgb(7, 2, 17);
+  font-family: Merriweather;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 60px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.subscribe-container p {
+  color: rgba(7, 2, 17, 0.6);
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: center;
 }
 
 .subscribe-box input[type='email'] {
@@ -334,19 +375,20 @@ main {
   flex-shrink: 0;
   background: #fff;
   outline: none;
+  padding-left: 15px;
+  border-radius: 50px 0 0 50px;
 }
 
 .btn-subscribe {
   width: 210px;
   height: 72px;
   flex-shrink: 0;
-  border-radius: 0px 50px 50px 0px;
-  background: #f00;
+  border-radius: 0 50px 50px 0;
+  background: rgb(255, 0, 0);
   color: #fff;
   text-align: center;
   font-family: Inter;
   font-size: 20px;
-  font-style: normal;
   font-weight: 600;
   text-transform: capitalize;
 }
@@ -354,22 +396,27 @@ main {
 .first-part,
 .third-part,
 .second-part {
-  display: flex;
-  justify-content: space-around;
-  gap: 5px;
+  width: 350px;
+  padding: 5px 0 0 5px;
+}
+.second-part img {
+  padding-left: 4px;
 }
 
 hr {
   background: rgba(255, 255, 255, 0.15);
-  height: 1px;
 }
 footer {
+  margin-top: 100px;
   background: #070211;
   color: #fff;
   font-family: Inter;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
-  line-height: 40px; /* 166.667% */
+  line-height: 40px;
   height: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
